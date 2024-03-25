@@ -9,10 +9,54 @@
 <body>
     <div class="image-container">
         <img src="../images/vintage_radio.jpg" alt="Vintage Radio">
-        <button class="button" id="next"></button>
-        <button class="button" id="prev"></button>
-        <button class="button" id="play"></button>
+        <button class="button" id="next" onclick="skip()"></button>
+            
+        <button class="button" id="prev" onclick="previous()"></button>
+
+        
+        <button class="button" id="play" onclick="playAudio()">
+        </button>
+            
     </div>
+
+    <script>
+
+        var music_list = [new Audio('../music/media/AutumnInNewYork.mp3'), new Audio('../music/media/IWishYouLove.mp3'), new Audio('../music/media/OnTheSunnySideOfTheStreet.mp3')];
+        var songPlaying = false;
+        var songIdx = Math.floor(Math.random() % 3);
+
+        function playAudio() {
+            if (songPlaying) {
+                music_list[songIdx].pause();
+            } else {
+                music_list[songIdx].play();
+            }
+            songPlaying = !songPlaying;    
+        };
+
+        function skip() {
+            music_list[songIdx].pause();
+            music_list[songIdx].currentTime = 0;
+            songIdx++;
+            if(songIdx > 2) {
+                songIdx = 0;
+            }
+            var songPlaying = false;
+            playAudio();
+        }
+
+        function previous() {
+            music_list[songIdx].pause();
+            music_list[songIdx].currentTime = 0;
+            songIdx--;
+            if(songIdx < 0) {
+                songIdx = 2;
+            }
+            var songPlaying = false;
+            playAudio();
+        }
+
+    </script>
     
     
 </body>

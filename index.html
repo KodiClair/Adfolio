@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="ASong" onClick="playPause()">
+        <audio src="/home/kodiclair/web_dev_repos/Adfolio/music/media/AutumnInNewYork.mp3" autoplay loop></audio>
+        Song
+    </button>
+      
+      <script>
+        var aud = document.getElementById("ASong").children[0];
+        var music_list = new Audio('/media/AutumnInNewYork.mp3');
+        var isPlaying = false;
+        aud.pause();
+      
+        function playPause() {
+          if (isPlaying) {
+            aud.pause();
+          } else {
+            aud.play();
+          }
+          isPlaying = !isPlaying;
+        }
+      </script>
+</body>
+</html>
