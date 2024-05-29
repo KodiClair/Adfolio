@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style-sheet/mp3.css">
-    <link rel="script" href="../jscript/mp3.js">
     <title>Mp3 Player</title>
 </head>
 
@@ -17,5 +16,27 @@
         <button class="button" id="play" onclick="play()"></button>
         <button class="button" id="menu" onclick="menu()"></button>
     </div>
+
+    <script>
+        function menu() {
+            location.href="../index.html";
+        };
+
+        function play() {
+            const videoPlayer = document.querySelector('.video-player');
+            const video = videoPlayer.querySelector('.video');
+            const playButton = videoPlayer.querySelector('.play-button');
+
+            playButton.addEventListener('click', (e) => {
+                if(video.paused) {
+                    video.play();
+                    //e.target.textContent = 'pause'
+                } else {
+                    video.pause();
+                    // e.target.textContent = 'play'
+                }
+            })
+        }
+    </script>
 </body>
 </html>
