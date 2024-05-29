@@ -8,18 +8,25 @@
     flex-direction: row;
     justify-content: space-between;
     background-color: aliceblue;
-    height: 200px;
+    height: 100px;
     width: 100%;
 }
 
+#logo {
+    
+}
+
+
 .content {
-    height: 1000px;
+    height: 700px;
     width: 100%;
-    background-color: gray;
+    background-color: rgba(27, 24, 0, 0.705);
 }
 
 .footer {
     height: 200px;
     width: 100%;
+    background-color: aliceblue;
+
 }
 
