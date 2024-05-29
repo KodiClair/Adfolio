@@ -1,0 +1,48 @@
+.player {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 30px;
+}
+
+.button {
+    position: absolute; /* set button to an absolute position */
+    top: 50%; /* adjust the top position of the button */
+    left: 50%; /* adjust the left position of the button */
+    z-index: 2; /* set a higher z-index than the image */
+    border: none; /* remove button border */
+    background-color: transparent;
+    padding: 19px 19px; /* set your desired padding */
+    cursor: pointer; /* change mouse cursor on hover */
+    border-radius: 50%;
+}
+
+#next {
+    transform: translate(115%, 125%); /* center the button */
+}
+
+#prev {
+    transform: translate(-225%, 125%); /* center the button */
+}
+
+#play {
+    transform: translate(-55%, 300%); /* center the button */
+}
+
+#menu {
+    transform: translate(-55%, -55%);
+}
+
+.video {
+    width: 250px; 
+    height: 190px;
+    border: none;
+    border-radius: 20px;
+    top: 50%; /* adjust the top position of the button */
+    left: 50%; /* adjust the left position of the button */
+    z-index: 2;
+    padding: 19px 19px;
+    transform: translate(0%, -217%);
+}
+

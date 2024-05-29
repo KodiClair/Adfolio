@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style-sheet/mp3.css">
+    <link rel="script" href="../jscript/mp3.js">
+    <title>Mp3 Player</title>
+</head>
+
+<body>
+    <div class="player">
+        <img src="../images/mp3.png">
+        <iframe class="video" src="https://www.youtube.com/embed/?listType=playlist&list=PLtfzL5cPW9eaabA7-U1WkdqAuT9mmMSRn" frameborder="0" allowfullscreen></iframe>
+        <button class="button" id="next" onclick="skip()"></button>
+        <button class="button" id="prev" onclick="previous()"></button>
+        <button class="button" id="play" onclick="play()"></button>
+        <button class="button" id="menu" onclick="menu()"></button>
+    </div>
+</body>
+</html>
