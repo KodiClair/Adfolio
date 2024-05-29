@@ -10,33 +10,13 @@
 <body>
     <div class="player">
         <img src="../images/mp3.png">
-        <iframe class="video" src="https://www.youtube.com/embed/?listType=playlist&list=PLtfzL5cPW9eaabA7-U1WkdqAuT9mmMSRn" frameborder="0" allowfullscreen></iframe>
+        <iframe class="video" src="https://www.youtube.com/embed/?listType=playlist&list=PLtfzL5cPW9eaabA7-U1WkdqAuT9mmMSRn" frameborder="0" controls=0></iframe>
         <button class="button" id="next" onclick="skip()"></button>
         <button class="button" id="prev" onclick="previous()"></button>
-        <button class="button" id="play" onclick="play()"></button>
+        <button class="button" id="play" onclick="play_vid()"></button>
         <button class="button" id="menu" onclick="menu()"></button>
     </div>
 
-    <script>
-        function menu() {
-            location.href="../index.html";
-        };
-
-        function play() {
-            const videoPlayer = document.querySelector('.video-player');
-            const video = videoPlayer.querySelector('.video');
-            const playButton = videoPlayer.querySelector('.play-button');
-
-            playButton.addEventListener('click', (e) => {
-                if(video.paused) {
-                    video.play();
-                    //e.target.textContent = 'pause'
-                } else {
-                    video.pause();
-                    // e.target.textContent = 'play'
-                }
-            })
-        }
-    </script>
+    <script src="../jscript/mp3.js"></script>
 </body>
 </html>
