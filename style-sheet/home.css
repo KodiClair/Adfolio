@@ -32,7 +32,7 @@
 
 
 .content {
-    height: 700px;
+    height: 1000px;
     width: 100%;
     background-color: rgba(27, 24, 0, 0.705);
 }
@@ -75,5 +75,21 @@
     width: 100%;
     background-color: rgb(75, 75, 74);
     margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.footer a {
+    text-decoration: none;
+    color: white;
+}
+
+#bio {
+    display: flex;
+    width: 100%;
+    gap: 50px;
 }
 
