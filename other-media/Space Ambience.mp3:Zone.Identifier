@@ -1,0 +1,4 @@
+[ZoneTransfer]
+ZoneId=3
+ReferrerUrl=https://cloudconvert.com/
+HostUrl=https://us-east.storage.cloudconvert.com/tasks/3f70b489-b453-41cd-9161-72b57471f818/Space%20Ambience.mp3?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=cloudconvert-production%2F20240607%2Fva%2Fs3%2Faws4_request&X-Amz-Date=20240607T181636Z&X-Amz-Expires=86400&X-Amz-Signature=f3a0f6409144cf4792c2e86579df4332c095f579a347f5cdbe3c287dd1c710c1&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%3D%22Space%20Ambience.mp3%22&response-content-type=audio%2Fmpeg&x-id=GetObject
