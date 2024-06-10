@@ -92,6 +92,7 @@
     border: #c69906;
     box-shadow: none;
     background-color: #715703;
+    cursor: pointer;
 }
 
 .bubble img {
